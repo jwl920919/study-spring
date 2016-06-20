@@ -12,6 +12,7 @@ Spring Boot 프로젝트에서 별도의 커스터마이징이 없을 경우 정
 - 첫째는, 프로젝트 상의 /src/main/META-INF/resources 디렉토리이다. 
   이 경로에 포함된 파일은 .jar 파일 안에 패키징된다. 
   /src/main/META-INF/resources/attachments/example.txt 경로에 파일이 위치할 경우 HTTP 상의 요청 주소는 /attachments/example.txt가 된다.
+
 - 둘째는, java -jar {jar} 명령을 실행한 시점의 현재 디렉토리에 서브로 존재하는 public 디렉토리이다. 
   앞서 첫번째 방법과 다르게 .jar 파일 외부에 정적 리소스가 위치한다.
   따라서 정적 리소스 수정시 재빌드가 필요없는 장점이 있다. 
@@ -57,6 +58,5 @@ public class StaticResourceConfig extends WebMvcConfigurerAdapter {
 ```
 
 ## 결론
-사실 대부분의 대용량 트래픽을 처리해야 하는 기업용 애플리케이션은 HTTP 요청의 앞 단계에서 
-Apache, NGINX와 같은 웹 서버를 이용하여 정적 리소스와 애플리케이션이 처리할 요청을 자동으로 구분하여 처리하기 때문에 앞서 설명한 방법은 사용하지 않는다.
+사실 대부분의 대용량 트래픽을 처리해야 하는 기업용 애플리케이션은 HTTP 요청의 앞 단계에서 Apache, NGINX와 같은 웹 서버를 이용하여 정적 리소스와 애플리케이션이 처리할 요청을 자동으로 구분하여 처리하기 때문에 앞서 설명한 방법은 사용하지 않는다.
 하지만 소규모 및 기업 내부용 애플리케이션 구현시 위 설명한 방법은 매우 효과적이기 때문에 추천한다.
