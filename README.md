@@ -15,9 +15,10 @@
 - ***Spring Framework - Beans xml 태그 정리*** (http://noritersand.tistory.com/152)
 
 - ***Spring 배포판 다운로드***
-http://repo.spring.io/release/org/springframework/spring
 
-- ***Spring 관련 문서***
+> 다운로드
+>> http://repo.spring.io/release/org/springframework/spring
 
-http://spring.io
-https://github.com/spring-projects/spring-framework/releases
+> Spring 관련 문서
+>> http://spring.io
+>> https://github.com/spring-projects/spring-framework/releases
