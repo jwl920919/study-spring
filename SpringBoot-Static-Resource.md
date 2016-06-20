@@ -28,3 +28,42 @@ Spring Boot 프로젝트에서 별도의 커스터마이징이 없을 경우 정
 Windows 개발 환경과 RHEL/CentOS 운영 환경으로 이원화하여 해당 프로파일에 적합한 파일 시스템 경로의 위치를 달리 설정하였다. 
 
 /assets/jquery.js 요청의 경우 개발 서버에서는 C:\assets\jquery.js, 운영 서버에서는 /opt/assets/jquery.js 경로를 서비스한다.
+
+- application-dev.properties
+```
+static.resource.location=file:///C:/assets/
+```
+
+- application-prod.properties
+```
+static.resource.location=file:/opt/assets/
+```
+
+- StaticResourceConfig.java
+```java
+package com.jsonobject.example;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+public class StaticResourceConfig extends WebMvcConfigurerAdapter {
+
+    @Value("${static.resource.location}")
+    private String staticResouceLocation;
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/assets/**").addResourceLocations(staticResouceLocation);
+    }
+}
+```
+
+## 결론
+사실 대부분의 대용량 트래픽을 처리해야 하는 기업용 애플리케이션은 HTTP 요청의 앞 단계에서 Apache, NGINX와 같은 
+
+웹 서버를 이용하여 정적 리소스와 애플리케이션이 처리할 요청을 자동으로 구분하여 처리하기 때문에 앞서 설명한 방법은 사용하지 않는다.
+
+하지만 소규모 및 기업 내부용 애플리케이션 구현시 위 설명한 방법은 매우 효과적이기 때문에 추천한다.
