@@ -203,7 +203,7 @@ public class TestService {
     }
 }
 ```
-@Reduce로 연결
+@Resource로 연결
 ```java
 @Resource(name="test2.testService") 
 //name에 필요한 것은 @Service("test2.testService") <- 여기서 괄호 속 문자열, 즉 식별자
