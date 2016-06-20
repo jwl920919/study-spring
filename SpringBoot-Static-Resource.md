@@ -1,9 +1,11 @@
 # Spring Boot에서 Static Resource 서비스
 
-Spring Boot로 제작한 애플리케이션을 빌드하면 1개의 .jar 파일이 생성되며 
-일반적인 Java 애플리케이션과 완전히 동일한 방법으로 구동된다. 
+Spring Boot로 제작한 애플리케이션을 빌드하면 1개의 .jar 파일이 생성되며 일반적인 Java 애플리케이션과 완전히 동일한 방법으로 구동된다. 
+
 빌드시 .html, .css, .js와 같은 정적 리소스(Static Resource) 또한 .jar 파일 안에 같이 패키징된다. 
+
 만약 개발 과정에서 프론트엔드 개발자가 이러한 정적 리소스 파일 수정에 따른 재배포를 요청할 경우 재빌드에 따른 번거로운 상황이 발생한다. 
+
 Spring Boot는 이런 경우에 재빌드 없이 손쉽게 대응할 수 있는 방법을 제공한다.
 
 ## 기본 설정된 정적 리소스 경로 적용하기
@@ -11,15 +13,21 @@ Spring Boot는 이런 경우에 재빌드 없이 손쉽게 대응할 수 있는 
 Spring Boot 프로젝트에서 별도의 커스터마이징이 없을 경우 정적 리소스의 위치는 우선순위대로 아래와 같다.
 
 - 첫째는, 프로젝트 상의 /src/main/META-INF/resources 디렉토리이다. 
-  - 이 경로에 포함된 파일은 .jar 파일 안에 패키징된다. 
-  - /src/main/META-INF/resources/attachments/example.txt 경로에 파일이 위치할 경우 HTTP 상의 요청 주소는 /attachments/example.txt가 된다.
+  
+  이 경로에 포함된 파일은 .jar 파일 안에 패키징된다. 
+  
+  /src/main/META-INF/resources/attachments/example.txt 경로에 파일이 위치할 경우 HTTP 상의 요청 주소는 /attachments/example.txt가 된다.
 
 - 둘째는, java -jar {jar} 명령을 실행한 시점의 현재 디렉토리에 서브로 존재하는 public 디렉토리이다. 
-  - 앞서 첫번째 방법과 다르게 .jar 파일 외부에 정적 리소스가 위치한다.
-  - 따라서 정적 리소스 수정시 재빌드가 필요없는 장점이 있다. 
-  - /{currentWorkingDirectory}/public/attachments/example.txt 경로에 파일이 위치할 경우, 
+  
+  앞서 첫번째 방법과 다르게 .jar 파일 외부에 정적 리소스가 위치한다.
+  
+  따라서 정적 리소스 수정시 재빌드가 필요없는 장점이 있다. 
+  
+  /{currentWorkingDirectory}/public/attachments/example.txt 경로에 파일이 위치할 경우, 
   HTTP 상의 요청 주소는 전자와 동일하게 /attachments/example.txt가 된다. 
-  - 현재 디렉토리라는 기준은 애매할 수 있으므로 절대 경로를 정하고 싶다면 java -jar {jar} -cp {absoluteDirectory}와 같이 JVM 옵션을 명시하면 된다.
+  
+  현재 디렉토리라는 기준은 애매할 수 있으므로 절대 경로를 정하고 싶다면 java -jar {jar} -cp {absoluteDirectory}와 같이 JVM 옵션을 명시하면 된다.
 
 ## 가장 확실한 방법, 절대 경로 명시하기
 
