@@ -1,4 +1,4 @@
-# Spring Boot에서 정적 리소스(Static Resource) 서비스
+# Spring Boot에서 Static Resource 서비스
 
 Spring Boot로 제작한 애플리케이션을 빌드하면 1개의 .jar 파일이 생성되며 
 일반적인 Java 애플리케이션과 완전히 동일한 방법으로 구동된다. 
