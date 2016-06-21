@@ -1,6 +1,6 @@
 # study-spring
 
-***Spring 배포판 다운로드***
+***- Spring 배포판 다운로드***
 
 - 다운로드
 
@@ -14,7 +14,7 @@
 
 
 
-***참고 사이트***
+***- 참고 사이트***
 
 [Spring Framework - Annotation 정리](http://noritersand.tistory.com/156)
 
