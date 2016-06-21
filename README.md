@@ -18,10 +18,10 @@
 
 - 다운로드
 
-> http://repo.spring.io/release/org/springframework/spring
+  > http://repo.spring.io/release/org/springframework/spring
 
 - Spring 관련 문서
 
-> http://spring.io
+  > http://spring.io
 
-> https://github.com/spring-projects/spring-framework/releases
+  > https://github.com/spring-projects/spring-framework/releases
