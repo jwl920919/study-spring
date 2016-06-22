@@ -4,11 +4,14 @@
 
 정상적으로 배포하기 위해서는 Maven을 통해 
 
-* Ecplipse
+* EClipse에서 실행
 
   Run As > Maven Build > Goal = package 입력 후 Run
+  
+  Output = ~/trarget/{ProjectName}.jar
 
-* CLI
+
+* CLI에서 실행
 
   mvn package
 
