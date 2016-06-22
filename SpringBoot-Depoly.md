@@ -8,10 +8,10 @@
 
   Run As > Maven Build > Goal = package 입력 후 Run
   
-  Output = ~/trarget/{ProjectName}.jar
+  Output Path = {Project Path}/target/{Project Name}.jar
 
 
 * CLI에서 실행
 
   mvn package
-
+  
