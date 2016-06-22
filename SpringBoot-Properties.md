@@ -1,7 +1,6 @@
-# External Properties 정리
+# Properties 정리
 
-### Properties Class
-
+### External Properties 정의
 
 * @PropertySource : Properties Source 지정  
 
