@@ -2,16 +2,18 @@
 
 ### Maven Build을 통한 Package
 
-정상적으로 배포하기 위해서는 Maven을 통해 
+Maven을 통해 package화 해서 jar를 생성
 
-* EClipse에서 실행
+( Eclipse export를 통해 runable jar 생성 시, 정상 동작되지 않음.
 
-  Run As > Maven Build > Goal = package 입력 후 Run
+* Mave - eclipse에서 실행
+
+  Run As > Maven Build > Goal: 'package' 입력 > Run
   
   Output Path = {Project Path}/target/{Project Name}.jar
 
 
-* CLI에서 실행
+* Mave - CLI에서 실행
 
   mvn package
   
