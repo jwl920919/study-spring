@@ -4,7 +4,7 @@
 
 Maven을 통해 package화 해서 jar를 생성
 
-( Eclipse export를 통해 runable jar 생성 시, 정상 동작되지 않음.
+( Eclipse export를 통해 runable jar 생성 시, 정상 동작되지 않음.)
 
 * Mave - eclipse에서 실행
 
