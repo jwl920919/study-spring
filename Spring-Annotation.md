@@ -418,8 +418,10 @@ public ProductService {
     private ProductCategory productCategory;
 }
 ```
-    - 기본적으로 @Autowired가 지정된 프로퍼티는 모두 설정되어야 한다. 
+
+* 기본적으로 @Autowired가 지정된 프로퍼티는 모두 설정되어야 한다. 
     - 만약 스프링이 연결할 빈을 찾지 못하면 예외처리가 발생되고, 이 경우를 대비하여 Required 애트리뷰트를 false로 설정하면 스프링이 호환되는 빈을 찾지 못하여도, 예외처리 없이 프로퍼티를 설정하지 않은 채로 남겨둘 것이다
+    
 ```java
 @Service
 public UserService implements UserService {
