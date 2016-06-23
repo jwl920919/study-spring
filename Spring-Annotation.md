@@ -400,3 +400,37 @@ public class BlogController {
 ***@ControllerAdvice***
 - Controller를 보조하는 어노테이션으로 Controller에서 쓰이는 공통기능들을 모듈화하여 전역으로 쓰기 위한 어노테이션(egov 3.0, Spring 3.2.X부터 추가)
 
+
+## 참고
+
+### @Autowired, @Resource 차이
+
+***@Autowired***
+* @Autowired는 Spring Framework에서 지원하는 의존주입 용도의 어노테이션이다.  
+    - 기본적으로 Type-driven Injection 으로 사용된다. 
+    - 말 그대로 타입으로 참조할 빈을 찾았을 때 Injection이 일어난다. 
+    - IoC 컨테이너 내에 같은 타입의 빈이 여러 개 검색되었을 경우, @Qualifier 어노테이션을 사용하여 구분할 수 있다.
+```java
+@Service
+public ProductService {
+    @Autowired
+    @Qualifier("electronics")
+    private ProductCategory productCategory;
+}
+```
+    - 기본적으로 @Autowired가 지정된 프로퍼티는 모두 설정되어야 한다. 
+    - 만약 스프링이 연결할 빈을 찾지 못하면 예외처리가 발생되고, 이 경우를 대비하여 Required 애트리뷰트를 false로 설정하면 스프링이 호환되는 빈을 찾지 못하여도, 예외처리 없이 프로퍼티를 설정하지 않은 채로 남겨둘 것이다
+```java
+@Service
+public UserService implements UserService {
+    @Autowired(required=false)
+    private UserDAO userDAO;
+}
+```
+
+***@Resource***
+
+* @Resource는 bean name으로 의존주입을 하고자 하는 경우 사용된다. 
+    - 기본적으로 스프링은 해당 프로퍼티와 일치하는 빈을 찾을 것이고, 혹은 name 속성을 이용해 명시적으로 빈의 이름을 설정할 수 있다.
+    - 이름으로 빈 프로퍼티를 자동 연결하려면 JSR-250의 @Resorce 어노테이션을 세터메서드, 생성자, 필드에 적용한다. 
+        (JSR-250어노테이션을 사용하려면 JSR 250 의존 라이브러리들을 포함시켜야 한다.)
