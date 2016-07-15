@@ -1,10 +1,14 @@
 # study-spring
 
-[1. Spring - Annotation 정리](https://github.com/songagi/study-spring/blob/master/Spring-Annotation.md)
-[2. Spring Boot - Deploy 방법](https://github.com/songagi/study-spring/blob/master/SpringBoot-Depoly.md)
-[3. Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
-[4. Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
-[5. Spring Boot - Properties Sample](https://github.com/songagi/study-spring/blob/master/SpringBoot-application.properties.sample.md)
+  [1. Spring - Annotation 정리](https://github.com/songagi/study-spring/blob/master/Spring-Annotation.md)
+
+  [2. Spring Boot - Deploy 방법](https://github.com/songagi/study-spring/blob/master/SpringBoot-Depoly.md)
+
+  [3. Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
+
+  [4. Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
+
+  [5. Spring Boot - Properties Sample](https://github.com/songagi/study-spring/blob/master/SpringBoot-application.properties.sample.md)
 
 
 
