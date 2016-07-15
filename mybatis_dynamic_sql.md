@@ -36,7 +36,7 @@
 
 #### trim, where, set 구문
 
-     * where
+  * where
 ```xml
 <select id="findActiveBlogLike" 
      resultType="Blog">
@@ -55,7 +55,7 @@
 </select>
 ```
 
-     * trim
+  * trim
      
 ```xml
 <trim prefix="WHERE" prefixOverrides="AND |OR ">
@@ -63,9 +63,9 @@
 </trim>
 ```
 
-     * set
-     
-     update하고자 하는 칼럼을 동적으로 포함 
+  * set
+  
+  update하고자 하는 칼럼을 동적으로 포함 
 ```xml
 <update id="updateAuthorIfNecessary">
   update Author
