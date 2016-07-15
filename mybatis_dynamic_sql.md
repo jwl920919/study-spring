@@ -16,7 +16,7 @@
 </select>
 ```
 
- ***choose, when, otherwise 구문***
+#### choose, when, otherwise 구문***
 
 ```xml
 <select id="findActiveBlogLike" 
