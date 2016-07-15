@@ -1,4 +1,4 @@
-# Mybatis 동적 SQL
+# Mybatis - 동적 SQL
 
 
 #### if 구문
