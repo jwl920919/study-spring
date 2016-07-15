@@ -136,9 +136,9 @@
 
   mybatis 3.2 부터 플러그인 형태의 스크립트 언어 사용 가능.
 
-  * ***xml***: 기본 설정 값. 모든 동적 태크를 사용 가능. (Default)
+  ***xml***: 기본 설정 값. 모든 동적 태크를 사용 가능. (Default)
   
-  * ***raw***: Lang 속성에 raw를 설정하면, parameter를 치환 후 DB Driver에 구문 전달. xml 보다 속도는 빠르지만 기능이 부족.
+  ***raw***: Lang 속성에 raw를 설정하면, parameter를 치환 후 DB Driver에 구문 전달. xml 보다 속도는 빠르지만 기능이 부족.
 
   * Lang 속성을 추가해서 사용할 언어 명시 가능  
 ```xml
