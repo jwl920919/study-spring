@@ -1,7 +1,7 @@
 # Mybatis 동적 SQL
 
 
- ***if 구문***
+#### if 구문
 
 ```xml
 <select id="findActiveBlogLike" 
