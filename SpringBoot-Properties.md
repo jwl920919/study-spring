@@ -1,3 +1,5 @@
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
+
 # Properties 정리
 
 ### External Properties 정의
@@ -36,3 +38,5 @@ public class SystemProperties {
 ```
 java -jar swt-manager-0.0.1.jar --spring.config.location="file:app.properties"
 ```
+
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
