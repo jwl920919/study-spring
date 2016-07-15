@@ -15,7 +15,7 @@
 
   [다운로드](http://repo.spring.io/release/org/springframework/spring)
 
-  [Spring Site](http://spring.io)
+  [spring.io](http://spring.io)
 
   [Github Releases](https://github.com/spring-projects/spring-framework/releases)
 
