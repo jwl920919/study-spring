@@ -136,19 +136,17 @@
 
   mybatis 3.2 부터 플러그인 형태의 스크립트 언어 사용 가능.
 
-  * xml : 기본적으로 xml로 쿼리 설정. 대부분의 동적 태크를 사용할 수 있다.
+  * ***xml***: 기본 설정 값. 모든 동적 태크를 사용 가능. (Default)
   
-  * raw : raw를 설정하면 parameter를 치환해서 DB Driver에 구문 전달. xml 보다 속도는 빠르지만, 사용 가능한 기능이 부족하다.
+  * ***raw***: Lang 속성에 raw를 설정하면, parameter를 치환 후 DB Driver에 구문 전달. xml 보다 속도는 빠르지만 기능이 부족.
 
-    - xml
+  * Lang 속성을 추가해서 사용할 언어 명시 가능  
 ```xml
 <select id="selectBlog" lang="raw">
   SELECT * FROM BLOG
 </select>
 ```
 
-    - raw (Lang 속성을 추가해서 사용할 언어 명시 가능)
-  
 ```java
 public interface Mapper {
   @Lang(RawLanguageDriver.class)
@@ -157,7 +155,7 @@ public interface Mapper {
 }
 ```
 
-    - 직접 Lang Driver를 구현할 수도 있음
+  직접 Lang Driver를 구현할 수도 있음
   
 ```
 public interface LanguageDriver {
