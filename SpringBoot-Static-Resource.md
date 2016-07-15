@@ -1,3 +1,5 @@
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
+
 # Spring Boot에서 Static Resource 서비스
 
 Spring Boot로 제작한 애플리케이션을 빌드하면 1개의 .jar 파일이 생성되며 일반적인 Java 애플리케이션과 완전히 동일한 방법으로 구동된다. 
@@ -60,3 +62,5 @@ public class StaticResourceConfig extends WebMvcConfigurerAdapter {
 ## 결론
 사실 대부분의 대용량 트래픽을 처리해야 하는 기업용 애플리케이션은 HTTP 요청의 앞 단계에서 Apache, NGINX와 같은 웹 서버를 이용하여 정적 리소스와 애플리케이션이 처리할 요청을 자동으로 구분하여 처리하기 때문에 앞서 설명한 방법은 사용하지 않는다.
 하지만 소규모 및 기업 내부용 애플리케이션 구현시 위 설명한 방법은 매우 효과적이기 때문에 추천한다.
+
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
