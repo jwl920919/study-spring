@@ -1,3 +1,8 @@
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
+
+# Spring Boot Properties
+
+```
 # ===================================================================
 # COMMON SPRING BOOT PROPERTIES
 #
@@ -921,3 +926,6 @@ spring.devtools.remote.proxy.port= # The port of the proxy to use to connect to 
 spring.devtools.remote.restart.enabled=true # Enable remote restart.
 spring.devtools.remote.secret= # A shared secret required to establish a connection (required to enable remote support).
 spring.devtools.remote.secret-header-name=X-AUTH-TOKEN # HTTP header used to transfer the shared secret.
+```
+
+[Back](https://github.com/songagi/study-spring/blob/master/README.md)
