@@ -140,14 +140,14 @@
   
   * raw : Annoration으로 지정한 parameter를 이용해서 구문 전달 가능. xml 보다 속도는 빠르지만, 사용 가능한 기능이 부족하다.
 
-  xml
+  - xml
 ```xml
 <select id="selectBlog" lang="raw">
   SELECT * FROM BLOG
 </select>
 ```
 
-  raw (Lang 속성을 추가해서 사용할 언어 명시 가능)
+  - raw (Lang 속성을 추가해서 사용할 언어 명시 가능)
   
 ```java
 public interface Mapper {
@@ -157,7 +157,7 @@ public interface Mapper {
 }
 ```
 
-  직접 Lang Driver를 구현할 수도 있음
+  - 직접 Lang Driver를 구현할 수도 있음
   
 ```
 public interface LanguageDriver {
