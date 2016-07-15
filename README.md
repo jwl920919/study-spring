@@ -1,5 +1,13 @@
 # study-spring
 
+[1. Spring - Annotation 정리](https://github.com/songagi/study-spring/blob/master/Spring-Annotation.md)
+[2. Spring Boot - Deploy 방법](https://github.com/songagi/study-spring/blob/master/SpringBoot-Depoly.md)
+[3. Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
+[4. Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
+[5. Spring Boot - Properties Sample](https://github.com/songagi/study-spring/blob/master/SpringBoot-application.properties.sample.md)
+
+
+
 ### Spring 배포판 다운로드
 
   - 다운로드
@@ -15,16 +23,9 @@
 
 
 ### 참고 사이트
-
-Link: [Spring Framework - Annotation 정리](http://noritersand.tistory.com/156)
-
-Link: [Spring Framework - Bean 의존 관계 설정](http://noritersand.tistory.com/153)
-
-Link: [Spring Framework - MVC 작성 방법(non-annotation)](http://noritersand.tistory.com/138)
-
-Link: [Spring Framework - Managing transactions](http://noritersand.tistory.com/198)
-
-Link: [Spring Framework - Forwarding/Redirection](http://noritersand.tistory.com/154)
-
-Link: [Spring Framework - Beans xml 태그 정리](http://noritersand.tistory.com/152)
-
+[Spring Framework - Annotation 정리](http://noritersand.tistory.com/156)
+[Spring Framework - Bean 의존 관계 설정](http://noritersand.tistory.com/153)
+[Spring Framework - MVC 작성 방법(non-annotation)](http://noritersand.tistory.com/138)
+[Spring Framework - Managing transactions](http://noritersand.tistory.com/198)
+[Spring Framework - Forwarding/Redirection](http://noritersand.tistory.com/154)
+[Spring Framework - Beans xml 태그 정리](http://noritersand.tistory.com/152)
