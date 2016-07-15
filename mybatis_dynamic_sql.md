@@ -1,6 +1,7 @@
 # Mybatis 동적 SQL
 
-  *** if 구문 ***
+
+ ***if 구문***
 
 ```xml
 <select id="findActiveBlogLike" 
@@ -15,7 +16,7 @@
 </select>
 ```
 
-  *** choose, when, otherwise 구문 ***
+ ***choose, when, otherwise 구문***
 
 ```xml
 <select id="findActiveBlogLike" 
