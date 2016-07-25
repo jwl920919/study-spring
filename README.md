@@ -1,15 +1,16 @@
 # study-spring
 
-  [1. Spring - Annotation 정리](https://github.com/songagi/study-spring/blob/master/Spring-Annotation.md)
+  [Spring - Annotation 정리](https://github.com/songagi/study-spring/blob/master/Spring-Annotation.md)
 
-  [2. Spring Boot - Deploy 방법](https://github.com/songagi/study-spring/blob/master/SpringBoot-Depoly.md)
+  [Spring Boot - Deploy 방법](https://github.com/songagi/study-spring/blob/master/SpringBoot-Depoly.md)
 
-  [3. Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
+  [Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
 
-  [4. Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
+  [Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
 
-  [5. Spring Boot - Properties 샘플](https://github.com/songagi/study-spring/blob/master/SpringBoot-properties.sample.md)
+  [Spring Boot - Properties 샘플](https://github.com/songagi/study-spring/blob/master/SpringBoot-properties.sample.md)
 
+  [MyBatis - Dynamic SQL](https://github.com/songagi/study-spring/blob/master/mybatis-dynamic_sql.md)
 
 ### 참고 사이트
 
