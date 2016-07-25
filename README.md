@@ -8,7 +8,7 @@
 
   [4. Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
 
-  [5. Spring Boot - Properties 샘플](https://github.com/songagi/study-spring/blob/master/SpringBoot-application.properties.sample.md)
+  [5. Spring Boot - Properties 샘플](https://github.com/songagi/study-spring/blob/master/SpringBoot-properties.sample.md)
 
 
 ### 참고 사이트
