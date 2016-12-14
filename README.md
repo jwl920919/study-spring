@@ -7,6 +7,8 @@
   [Spring Boot - Property 정리](https://github.com/songagi/study-spring/blob/master/SpringBoot-Properties.md)
 
   [Spring Boot - Static Resource](https://github.com/songagi/study-spring/blob/master/SpringBoot-Static-Resource.md)
+  
+  [Spring Boot - SSL](https://github.com/songagi/study-spring/blob/master/SpringBoot-SSL.md)
 
   [Spring Boot - Properties 샘플](https://github.com/songagi/study-spring/blob/master/SpringBoot-properties.sample.md)
 
